@@ -56,7 +56,15 @@ export default {
   methods: {
     onSubmit() {
       console.log('onSubmit');
-      this.$store.dispatch('register');
+      this.$store
+        .dispatch('register', {
+          email: 'asdasd@mai.ru',
+          username: 'asdjjn334',
+          password: 'sdfsdf23jkjme',
+        })
+        .then(result => {
+          console.log({ result });
+        });
     },
   },
 };

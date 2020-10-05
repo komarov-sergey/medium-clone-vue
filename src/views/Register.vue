@@ -65,7 +65,6 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log('onSubmit');
       this.$store
         .dispatch('register', {
           email: this.email,
